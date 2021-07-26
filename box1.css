@@ -1,0 +1,97 @@
+body, ul, li, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background: #002547;
+}
+
+.logo {
+    background: url('./Subtract.jpg') no-repeat;
+    width: auto;
+    height: 41px;
+    padding-left: 45px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: contain;    
+}
+
+.list {
+    width: 427px;
+    height: 26.5px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.list__item {
+    color: white;
+    font-family: fantasy;
+    margin-right: 25px;
+}
+
+.list__item:last-child {
+    margin-right: 0;
+}
+
+.list__item:hover {
+    cursor: pointer;
+    font-size: larger;
+    color:rgb(188, 255, 188);
+}
+
+.header__button {
+    cursor: pointer;
+    font: caption;
+    color: blue;
+    width: 147px;
+    height: 53px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.header__button:hover {
+    font-size: larger;
+}
+
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    background: url('./comp.png') no-repeat;
+    background-size: contain;
+    background-position-x: 900px;
+}
+
+.test {
+    padding-right: 231px;
+    padding-left: 231px;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main__box__left {
+    padding-top: 100px;
+    max-width: 610px;
+}
+
+.low__but {
+    width: 300px; 
+    height: 70px;
+    font-size: 30px; 
+    border: 1px solid grey; 
+    border-radius: 8px;
+}
