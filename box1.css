@@ -1,4 +1,4 @@
-body, ul, li, h1, h2, h3{
+body, ul, li, h1, h2, h3, button{
     margin: 0;
     padding: 0;
     font-family:'Poppins';
@@ -63,6 +63,7 @@ body, ul, li, h1, h2, h3{
 }
 
 .wrapper {
+    height: 800px;
     max-width: 1600px;
     margin: 0 auto;
     background: url('./comp.png') no-repeat;
@@ -88,9 +89,9 @@ body, ul, li, h1, h2, h3{
 }
 
 .top__but {
-    width: 300px; 
-    height: 70px;
-    font-size: 30px; 
+    width: 250px; 
+    height: 50px;
+    font-size: 20px; 
     border: 1px solid grey; 
     border-radius: 8px;
 }
@@ -142,13 +143,53 @@ body, ul, li, h1, h2, h3{
     display: flex;
     justify-content: center;
     align-content: center;
+    align-items: center;
     margin-left: 260px;
 }
 
 .second__page__low__left {
     width: 490px;
     height: 696px;
-    
+}
+
+summary {
+    cursor: pointer;
+}
+
+details {
+    user-select: none;
+}
+
+.summ__text {
+    font-size: 20px;
+
+}
+
+.in__text {
+    font-size: 18px;
+}
+
+details > summary {
+    list-style-type: none;
+}
+
+summary:after {
+    border-radius: 5px;
+    content: url('./down.png');
+    color: black;
+    font-size: 1.5em;
+    padding-left: 10px;
+    text-align: center;
+
+}
+
+details[open] summary:after {
+    content: "-";
+    color: dodgerblue;
+}
+
+details[open] {
+      color:dodgerblue;
 }
 
 .second__page__low__right {
@@ -169,13 +210,19 @@ body, ul, li, h1, h2, h3{
 }
 
 .low__but {
-    border: 1px inset steelblue;
-    width: 198px;
-    height: 49px;
+    margin-top: 20px;
+    border: 0.5px inset steelblue;
+    border-radius: 5px;
+    width: 170px;
+    height: 45px;
+    font-size: 17px;
+}
+
+.low__but:hover {
+    cursor: pointer;
 }
 
 .third__page {
-    margin-top: 148px;
 }
 
 .third__page__top {
@@ -192,4 +239,210 @@ body, ul, li, h1, h2, h3{
     height: 643px;
     background:url('./rect.png') no-repeat;
     
+}
+
+.rect__top {
+    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.rect__1 {
+    width: 225px;
+    margin-right: 170px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.rectangle h2 {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.rectangle p {
+    font-size: 16px;
+}
+
+.rect__1 img {
+    background-color: rgb(219, 235, 255);
+    background-size: 20px;
+}
+
+.text__page4 {
+    text-align: center;
+
+}
+
+.block__page4 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.list__page4 {
+    font-size: 20px;
+    margin: 40px;
+    text-align: left;
+    list-style: url('./done.png');
+}
+
+.list__page4__1 {
+    list-style: url('./doen_white.png');
+}
+
+.block__1__page4 {
+    margin-top: 60px;
+    padding: 30px;
+    border:1px solid powderblue;
+    border-radius: 15px;
+    width: 360px;
+    height: 650px;
+    text-align: center;
+}
+
+.block__2__page4 {
+    margin-top: 30px;
+    height: 720px;
+    width: 400px;
+    color:white;
+    background: #002547;
+}
+
+.block__price {
+    font-size: 39px;
+    font-weight: bold;
+}
+
+.block__button {
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+}
+
+.block__button__1 {
+    font-size:17px;
+    margin-bottom: 20px;
+    color: white;
+    background-color:#1D92FF;
+    width: 220px;
+    height: 50px;
+}
+
+.block__button__2 {
+    margin-top: 45px;
+    background: white;
+    color:mediumturquoise;
+    font-weight: bold;
+}
+
+.block__button:hover {
+    cursor: pointer;
+}
+
+.almost__footer {
+    position: relative;
+    top: 230px;
+    width: 1250px;
+    height: 206px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 175px;
+    background: #002648;
+    color: white;
+
+}
+
+.almost__footer__text {
+    width: 480px;
+    height: auto;
+}
+
+.email__input {
+    display: flex;
+    align-items: center;
+    width: 450px; 
+    height:60px; 
+    background: #002648;
+    border:1px solid grey; 
+    border-radius: 30px; 
+    font-size: 20px;
+    padding: 30px;
+    color: white;
+}
+
+.email__input__field {
+    width: 450px; 
+    height:60px; 
+    background: #002648;
+    border:none;
+    font-size: 20px;
+    color: white;
+}
+
+
+.button__almost__footer {
+    width: 110px;
+    height: 45px;
+    border-radius: 25px;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+footer {
+    margin-top: 200px;
+    color: grey;
+    height: 376px;
+    background: #070C11;
+}
+
+.footer__footer {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logo {
+    background: url('./Subtract.jpg') no-repeat;
+    width: auto;
+    height: 41px;
+    padding-left: 45px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: contain;
+    color: white;
+}
+
+.footer__main {
+    margin: 30px;
+    width: auto;
+}
+
+.footer__main:first-child {
+    width: 250px;
+}
+
+footer h2 {
+    font-size: 19px;
+    color: white;
+}
+
+.email__input__field__footer {
+    padding-left: 15px;
+    margin: 10px;
+    width: 210px; 
+    height: 35px; 
+    background: transparent;
+    border:1px solid grey;
+    border-radius: 20px;
+    font-size: 15px;
+    color: white;
 }
